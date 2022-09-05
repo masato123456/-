@@ -1,5 +1,8 @@
-<%= flash[:notice] %>
-<%= flash[:success] %>
+<% flash.each do |key,value| %>
+  <p><% key %></p>
+  <p><%= value %></p>
+<% end %>
+
 
 <p>
   <strong>Title</strong>
